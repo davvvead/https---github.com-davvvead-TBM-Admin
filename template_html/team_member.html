@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="../assets/img/logo/tbmlogo.png">
-	<title>TBM Risks Admin | Portfolio Editor</title>
+	<title>TBM Risks Admin |  Team Members Editor</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -13,6 +13,11 @@
 	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
 	<link href="../assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END core-css ================== -->
+	
+	<!-- ================== BEGIN page-css ================== -->
+	<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/abpetkov-powerange/dist/powerange.min.css" rel="stylesheet" />
+	<!-- ================== END page-css ================== -->
 </head>
 <body style="background: #fdf5f5;">
 	<!-- BEGIN #loader -->
@@ -134,6 +139,7 @@
 		<div id="sidebar" class="app-sidebar">
 			<!-- BEGIN scrollbar -->
 			<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+
 								<!-- BEGIN menu -->
 								<div class="menu">
 									<div class="menu-profile">
@@ -190,7 +196,7 @@
 										</div>
 									</div>
 									<div class="menu-item">
-										<a href="form_elements.html" class="menu-link">
+										<a href="portfolio_editor.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-briefcase"></i>
 											</div>
@@ -198,7 +204,7 @@
 										</a>
 									</div>
 									<div class="menu-item">
-										<a href="form_plugins.html" class="menu-link">
+										<a href="testimonial_editor.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-comments"></i>
 											</div>
@@ -206,7 +212,7 @@
 										</a>
 									</div>
 									<div class="menu-item">
-										<a href="form_slider_switcher.html" class="menu-link">
+										<a href="team_member.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-users"></i>
 											</div>
@@ -214,11 +220,27 @@
 										</a>
 									</div>
 									<div class="menu-item">
-										<a href="table_basic.html" class="menu-link">
+										<a href="contact_details.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-mobile"></i>
 											</div>
 											<div class="menu-text">User Contact Details</span></div>
+										</a>
+									</div>
+                                    <div class="menu-item">
+										<a href="subscriber.html" class="menu-link">
+											<div class="menu-icon">
+												<i class="fa fa-envelope"></i>
+											</div>
+											<div class="menu-text">Newsletter Details</span></div>
+										</a>
+									</div>
+                                    <div class="menu-item">
+										<a href="socials.html" class="menu-link">
+											<div class="menu-icon">
+												<i class="fa fa-user"></i>
+											</div>
+											<div class="menu-text">Social Media Editor</span></div>
 										</a>
 									</div>
 					
@@ -248,7 +270,7 @@
 
 			<!-- END breadcrumb -->
 			<!-- BEGIN page-header -->
-			<h1 class="page-header text-center mb-3" style="color: #ee450c;">Portfolio Editor <small style="color: black;">Administrator could add new products to portfolio section.</small></h1>
+			<h1 class="page-header text-center mb-3" style="color: #ee450c;">Team Members Editor <small style="color: black;">Administrator could add new team member details to the team section.</small></h1>
 			<!-- END page-header -->
 			
 			<!-- BEGIN row -->
@@ -258,8 +280,8 @@
 					<!-- BEGIN panel -->
 					<div class="panel panel-inverse" data-sortable-id="form-stuff-1">
 						<!-- BEGIN panel-heading -->
-						<div class="panel-heading" style="background: #ee450c; color: white;">
-							<h4 class="panel-title">New Portfolio Details</h4>
+						<div class="panel-heading" style="background: #ee450c;">
+							<h4 class="panel-title">Team Member Details</h4>
 							<div class="panel-heading-btn">
 								<a href="javascript:;" class="btn btn-xs btn-icon btn-default" data-toggle="panel-expand"><i class="fa fa-expand"></i></a>
 								<a href="javascript:;" class="btn btn-xs btn-icon btn-success" data-toggle="panel-reload"><i class="fa fa-redo"></i></a>
@@ -274,28 +296,27 @@
 								Textual form controls—like <code>&lt;input&gt;</code>s, <code>&lt;textarea&gt;</code>s, <code>&lt;select&gt;</code>s are styled with the <code>.form-control</code> and <code>.form-select</code> class. Included are styles for general appearance, focus state, sizing, and more.
 							</div> -->
 							<form action="#">
-								<div class="row mb-15px"> <!--Portfolio Title-->
-									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Product Title</label>
+								<div class="row mb-15px"> <!--Team Member Name-->
+									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Team Member Name</label>
 									<div class="col-md-9">
-										<input type="text" class="form-control mb-5px" placeholder="Product Title"/>
-										<small class="fs-12px" style="color: black;">(Eg. The Optis Platform)</small>
+										<input type="text" class="form-control mb-5px" placeholder="Team Member Name" />
 									</div>
 								</div>
-								<div class="row mb-15px"> <!--Portfolio Details-->
-									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c; " >Product Details</label>
+								<div class="row mb-15px"> <!--Team Member Occupation-->
+									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Team Member Occupation</label>
 									<div class="col-md-9">
-										<textarea class="form-control" rows="3" placeholder="Product Details"></textarea>
+										<input type="text" class="form-control mb-5px" placeholder="Team Member Occupation" />
 									</div>
 								</div>
-								<div class="row mb-5"> <!--Portfolio Image-->
-									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Product Image</label>
+								<div class="row mb-5"> <!--Team Member Image-->
+									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Team Member Image</label>
 									<div class="col-md-9">
-										<input class="form-control" type="file" id="formFileMultiple" multiple/>
+										<input class="form-control" type="file" id="formFileMultiple" multiple />
 									</div>
 								</div>
 								<div class="row mb-15px align-items-center"> <!--Upload Button-->
 									<div class="col-md-12 text-center">
-										<button type="submit" class="btn w-100px me-5px align-items-center" style="background: #1b7d0c; color: white;">Upload</button>
+										<button type="submit" class="btn btn w-100px me-5px align-items-center" style="color: white; background: #1b7d0c;">Upload</button>
 									</div>
 								</div>
 							</form>
@@ -303,10 +324,10 @@
 						<!-- END panel-body -->
 					</div>
 					<!-- END panel -->
-                    
+		
 		<!-- BEGIN theme-panel -->
 		<div class="theme-panel">
-			<a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+			<!-- <a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a> -->
 			<div class="theme-panel-content" data-scrollbar="true" data-height="100%">
 				<h5>App Settings</h5>
 				<!-- BEGIN theme-list -->
@@ -515,6 +536,9 @@
 	<!-- ================== END core-js ================== -->
 	
 	<!-- ================== BEGIN page-js ================== -->
+	<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
+	<script src="../assets/plugins/abpetkov-powerange/dist/powerange.min.js"></script>
+	<script src="../assets/js/demo/form-slider-switcher.demo.js"></script>
 	<script src="../assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
 	<script src="../assets/js/demo/render.highlight.js"></script>
 	<!-- ================== END page-js ================== -->

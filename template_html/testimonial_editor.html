@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="../assets/img/logo/tbmlogo.png">
-	<title>TBM Risks Admin |  Team Members Editor</title>
+	<title>TBM Risks Admin | Testimonials Editor</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -15,8 +15,14 @@
 	<!-- ================== END core-css ================== -->
 	
 	<!-- ================== BEGIN page-css ================== -->
-	<link href="../assets/plugins/switchery/dist/switchery.min.css" rel="stylesheet" />
-	<link href="../assets/plugins/abpetkov-powerange/dist/powerange.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+	<link href="../assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/tag-it/css/jquery.tagit.css" rel="stylesheet" />
+	<link href="../assets/plugins/spectrum-colorpicker2/dist/spectrum.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
 	<!-- ================== END page-css ================== -->
 </head>
 <body style="background: #fdf5f5;">
@@ -196,7 +202,7 @@
 										</div>
 									</div>
 									<div class="menu-item">
-										<a href="form_elements.html" class="menu-link">
+										<a href="portfolio_editor.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-briefcase"></i>
 											</div>
@@ -204,7 +210,7 @@
 										</a>
 									</div>
 									<div class="menu-item">
-										<a href="form_plugins.html" class="menu-link">
+										<a href="testimonial_editor.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-comments"></i>
 											</div>
@@ -212,7 +218,7 @@
 										</a>
 									</div>
 									<div class="menu-item">
-										<a href="form_slider_switcher.html" class="menu-link">
+										<a href="team_member.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-users"></i>
 											</div>
@@ -220,11 +226,27 @@
 										</a>
 									</div>
 									<div class="menu-item">
-										<a href="table_basic.html" class="menu-link">
+										<a href="contact_details.html" class="menu-link">
 											<div class="menu-icon">
 												<i class="fa fa-mobile"></i>
 											</div>
 											<div class="menu-text">User Contact Details</span></div>
+										</a>
+									</div>
+                                    <div class="menu-item">
+										<a href="subscriber.html" class="menu-link">
+											<div class="menu-icon">
+												<i class="fa fa-envelope"></i>
+											</div>
+											<div class="menu-text">Newsletter Details</span></div>
+										</a>
+									</div>
+                                    <div class="menu-item">
+										<a href="socials.html" class="menu-link">
+											<div class="menu-icon">
+												<i class="fa fa-user"></i>
+											</div>
+											<div class="menu-text">Social Media Editor</span></div>
 										</a>
 									</div>
 					
@@ -254,7 +276,7 @@
 
 			<!-- END breadcrumb -->
 			<!-- BEGIN page-header -->
-			<h1 class="page-header text-center mb-3" style="color: #ee450c;">Team Members Editor <small style="color: black;">Administrator could add new team member details to the team section.</small></h1>
+			<h1 class="page-header text-center mb-3" style="color: #ee450c;">Testimonials Editor <small style="color: black;">Administrator could add new testimonials to the testimonials section.</small></h1>
 			<!-- END page-header -->
 			
 			<!-- BEGIN row -->
@@ -265,7 +287,7 @@
 					<div class="panel panel-inverse" data-sortable-id="form-stuff-1">
 						<!-- BEGIN panel-heading -->
 						<div class="panel-heading" style="background: #ee450c;">
-							<h4 class="panel-title">Team Member Details</h4>
+							<h4 class="panel-title">Testimonial Details</h4>
 							<div class="panel-heading-btn">
 								<a href="javascript:;" class="btn btn-xs btn-icon btn-default" data-toggle="panel-expand"><i class="fa fa-expand"></i></a>
 								<a href="javascript:;" class="btn btn-xs btn-icon btn-success" data-toggle="panel-reload"><i class="fa fa-redo"></i></a>
@@ -280,27 +302,33 @@
 								Textual form controls—like <code>&lt;input&gt;</code>s, <code>&lt;textarea&gt;</code>s, <code>&lt;select&gt;</code>s are styled with the <code>.form-control</code> and <code>.form-select</code> class. Included are styles for general appearance, focus state, sizing, and more.
 							</div> -->
 							<form action="#">
-								<div class="row mb-15px"> <!--Team Member Name-->
-									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Team Member Name</label>
+								<div class="row mb-15px"> <!--Attestant Name-->
+									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Attestant Name</label>
 									<div class="col-md-9">
-										<input type="text" class="form-control mb-5px" placeholder="Team Member Name" />
+										<input type="text" class="form-control mb-5px" placeholder="Attestant Name" />
 									</div>
 								</div>
-								<div class="row mb-15px"> <!--Team Member Occupation-->
-									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Team Member Occupation</label>
+								<div class="row mb-15px"> <!--Attestant Occupation-->
+									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Attestant Occupation</label>
 									<div class="col-md-9">
-										<input type="text" class="form-control mb-5px" placeholder="Team Member Occupation" />
+										<input type="text" class="form-control mb-5px" placeholder="Attestant Occupation" />
 									</div>
 								</div>
-								<div class="row mb-5"> <!--Team Member Image-->
-									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Team Member Image</label>
+								<div class="row mb-15px"> <!--Portfolio Details-->
+									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Testimonial Details</label>
+									<div class="col-md-9">
+										<textarea class="form-control" rows="3" placeholder="Testimonial Details"></textarea>
+									</div>
+								</div>
+								<div class="row mb-5"> <!--Attestant Image-->
+									<label class="form-label col-form-label col-md-3 text-center" style="color: #ee450c;">Attestant Image</label>
 									<div class="col-md-9">
 										<input class="form-control" type="file" id="formFileMultiple" multiple />
 									</div>
 								</div>
 								<div class="row mb-15px align-items-center"> <!--Upload Button-->
 									<div class="col-md-12 text-center">
-										<button type="submit" class="btn btn w-100px me-5px align-items-center" style="color: white; background: #1b7d0c;">Upload</button>
+										<button type="submit" class="btn btn w-100px me-5px align-items-center" style="background: #1b7d0c; color: white;" >Upload</button>
 									</div>
 								</div>
 							</form>
@@ -311,7 +339,7 @@
 		
 		<!-- BEGIN theme-panel -->
 		<div class="theme-panel">
-			<a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+			<!-- <a href="javascript:;" data-toggle="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a> --> <!--Commented Out-->
 			<div class="theme-panel-content" data-scrollbar="true" data-height="100%">
 				<h5>App Settings</h5>
 				<!-- BEGIN theme-list -->
@@ -520,11 +548,21 @@
 	<!-- ================== END core-js ================== -->
 	
 	<!-- ================== BEGIN page-js ================== -->
-	<script src="../assets/plugins/switchery/dist/switchery.min.js"></script>
-	<script src="../assets/plugins/abpetkov-powerange/dist/powerange.min.js"></script>
-	<script src="../assets/js/demo/form-slider-switcher.demo.js"></script>
+	<script src="../assets/plugins/moment/min/moment.min.js"></script>
+	<script src="../assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script src="../assets/plugins/select2/dist/js/select2.min.js"></script>
+	<script src="../assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="../assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+	<script src="../assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+	<script src="../assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+	<script src="../assets/plugins/jquery-migrate/dist/jquery-migrate.min.js"></script>
+	<script src="../assets/plugins/tag-it/js/tag-it.min.js"></script>
+	<script src="../assets/plugins/clipboard/dist/clipboard.min.js"></script>
+	<script src="../assets/plugins/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+	<script src="../assets/plugins/select-picker/dist/picker.min.js"></script>
+	<script src="../assets/js/demo/form-plugins.demo.js"></script>
 	<script src="../assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
 	<script src="../assets/js/demo/render.highlight.js"></script>
 	<!-- ================== END page-js ================== -->
 </body>
-</html>
+</html>;
